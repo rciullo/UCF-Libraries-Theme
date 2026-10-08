@@ -11,14 +11,25 @@ Version: 1.21.3
 */
 @import url('https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Roboto:500,700,400');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500,700,800');
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,500,700,800');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700,800');
 
 /* Color variables */
 :root {
---ucf-gold: #ffcc00; /*Temp Space U Blue */
---ucf-gold-hover: #dfb300; /*Temp Space U Blue */
---ucf-black: #111111;
+--ucf-gold: #EDB80D; 
+--ucf-gold-hover: #C99A05;
+--ucf-black: #121212;
+--ink: #0a0a0a;
+--text-body: #1A1A1A;
+--text-secondary: #565656;
+--text-secondary-dark: #B3B3B3;
+--horizon-blue: #4a8fba;
+--blue-tint: #8EC2DD;
+--link-blue: #1F6A9A;
+--link-blue-hover: #12496C;
 --light-gray: #eeeeee;
 --white: #ffffff;
+--paper-alt: #F4F3F0;
 --ta-teal: #16bfcc;
 --ta-teal-hover: #138b95;
 --dark-gray: #333333;
@@ -35,7 +46,7 @@ Version: 1.21.3
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
 }
 
 a {color: #1a73b3;}
@@ -70,13 +81,6 @@ p a.btn, ul li a.btn, ul.nav li a{
 
 .main-header {
 	background: var(--ucf-gold);
-/* Old browsersbackground: -moz-linear-gradient(top, #ffcc00 0%, #e5af00 100%); FF3.6+; */
-	/* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffcc00), color-stop(100%,#e5af00)); /* Chrome,Safari4+ */;
-	/* background: -webkit-linear-gradient(top, #ffcc00 0%,#e5af00 100%); Chrome10+,Safari5.1+; */
-	/* background: -o-linear-gradient(top, #ffcc00 0%,#e5af00 100%); Opera 11.10+; */
-	/* background: -ms-linear-gradient(top, #ffcc00 0%,#e5af00 100%); IE10+; */
-	/* background: linear-gradient(to bottom, #ffcc00 0%,#e5af00 100%); W3C; */
-	/* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', endColorstr='#e5af00',GradientType=0 ); IE6-9; */ */
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 .h1, h1 { margin: 1em 0;}
@@ -160,7 +164,7 @@ p.comment-form-url {   /* Removes Website URL field from post comments */
 }
 
 .gold-btn {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   color: #000;
   border-width: 3px;
@@ -225,6 +229,17 @@ p.comment-form-url {   /* Removes Website URL field from post comments */
   font-size: 1rem;
   color: #666;
 }
+
+/* Libchat widget */
+.lcs_slide_out-r {
+  top: auto!important;
+  bottom: 0!important;
+}
+.lcs_slide_out-r div.lcs_header a {
+    left: auto!important;
+    right: 75px!important;
+}
+
 /*test*/
 
 /* Masonry Settings */
@@ -500,6 +515,7 @@ padding: 12px 15px;
 	font-size: 1.25em;
 	line-height: 2;
 	margin: 0;
+  padding: .25em 0;
 	font-family: 'Montserrat', 'Roboto', sans-serif;
 }
 .navbar-library .navbar-brand {
@@ -507,13 +523,15 @@ padding: 12px 15px;
 	height: auto;
   font-family: 'Montserrat', 'Roboto', sans-serif ;
   font-size: 2.5em;
-  font-variant: small-caps;
-  font-weight: 800;
-  margin: .25em 0 .35em;
+  /* font-variant: small-caps; */
+  font-weight: 700;
+  /* margin: .25em 0 .35em; */
+  margin-top: 6px;
 }
 @media (min-width: 768px) {
   .navbar-library .navbar-brand {
-    font-size: 2.75em;
+    font-size: 1.75em;
+    margin-top: 0;
   }
 }
 
@@ -577,7 +595,7 @@ padding: 12px 15px;
 }
 .navbar-library .navbar-collapse, .navbar-library .navbar-form {
 	border-color: #222;
-	padding: 1em 0 0;
+	/* padding: 1em 0 0; */
 	overflow: hidden;
 }
 .navbar-library .navbar-nav > .open > a, .navbar-library .navbar-nav > .open > a:hover, .navbar-library .navbar-nav > .open > a:focus {
